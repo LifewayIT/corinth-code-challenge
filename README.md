@@ -1,7 +1,7 @@
 
 ---
 
-This is LifeWay IT's code challenge given to full stack software engineering candidates! Interested in working with our team? Checkout open positions [here](http://tech.lifeway.com/)
+This is LifeWay IT's code challenge given to full stack software engineering candidates! Interested in working with our team? Check out open positions [here](http://tech.lifeway.com/)
 
 ---
 
