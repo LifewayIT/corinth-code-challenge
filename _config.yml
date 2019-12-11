@@ -1,3 +1,5 @@
 theme: jekyll-theme-cayman
 title: Lifeway Full Stack Code Challenge
 description: A quick challenge for new full stack software engineering candidates.
+plugins:
+  - jemoji
