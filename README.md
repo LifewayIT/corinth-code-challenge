@@ -1,4 +1,4 @@
-### Lifeway Tech Full Stack Code Challenge.
+
 ---
 
 This is LifeWay IT's code challenge given to full stack software engineering candidates! Interested in working with our team? Checkout open positions [here](http://tech.lifeway.com/)
