@@ -23,13 +23,19 @@ Use [SWAPI](https://swapi.co/) to obtain all the star wars data that you need. N
 
 Use whatever languages or tech you want -- we are looking for clean, testable code that demonstrates usage of common design patterns and best practices above all else. 
 
-### BUT
+#### BUT
 
 You will get bonus points if...
 
 * Basic react.js understanding is demonstrated...
 * A basic "gateway" api is created to consolidate and proxy calls to SWAPI...
 * You add cool and creative features not included in the spec...
+
+---
+
+### Submissions
+
+Do not commit your example onto a public repository. Please send us a zip file of your code that contains instructions on how to build and run it locally.
 
 ---
 <div class="footer">
