@@ -38,6 +38,8 @@ You will get bonus points if...
 Do not commit your example onto a public repository. Please send us a zip file of your code that contains instructions on how to build and run it locally.
 
 ---
+
+
 <div class="footer">
   <img src="http://lwtech.staging.wpengine.com/wp-content/uploads/2014/01/lifeway-it-logo-gray-265x73.gif" alt="Smiley face" width="150" height="42">
 </div>
