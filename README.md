@@ -19,7 +19,7 @@ Create a simple single page application that provides the following features:
     * Films Appeared In
     * Starships Flown
 
-Use [SWAPI](https://swapi.co/) to obtain all the star wars data that you need. Note that the api does not allow you to search by name. :smiling_imp:
+Use [SWAPI](https://swapi.dev/) to obtain all the star wars data that you need. Note that the api does not allow you to search by name. :smiling_imp:
 
 Use whatever languages or tech you want -- we are looking for clean, testable code that demonstrates usage of common design patterns and best practices above all else. 
 
