@@ -35,7 +35,7 @@ You will get bonus points if...
 
 ### Submissions
 
-Do not commit your example onto a public repository. Please send us a zip file of your code that contains instructions on how to build and run it locally.
+Please put your submission in a public github repository to share.
 
 ---
 
