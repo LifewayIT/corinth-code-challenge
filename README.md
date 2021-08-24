@@ -27,9 +27,10 @@ Use whatever languages or tech you want -- we are looking for clean, testable co
 
 You will get bonus points if...
 
-* Basic react.js understanding is demonstrated...
-* A basic "gateway" api is created to consolidate and proxy calls to SWAPI...
-* You add cool and creative features not included in the spec...
+* A decent understanding of React is demonstrated
+* A decent understanding of Next.js is demonstrated
+* A basic "gateway" api is created to consolidate and proxy calls to SWAPI
+* You add cool and creative features not included in the spec
 
 ---
 
@@ -41,5 +42,5 @@ Please put your submission in a public github repository to share.
 
 
 <div class="footer">
-  <img src="http://lwtech.staging.wpengine.com/wp-content/uploads/2014/01/lifeway-it-logo-gray-265x73.gif" alt="Smiley face" width="150" height="42">
+  <img src="https://commerce-notification-service-uat.s3.amazonaws.com/emails/Lifewaylogo__RGB_gray_flat.png" alt="Lifeway Christian Resources" width="150" style="padding: 1rem;">
 </div>
