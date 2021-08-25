@@ -29,6 +29,7 @@ You will get bonus points if...
 
 * A decent understanding of React is demonstrated
 * A decent understanding of Next.js is demonstrated
+* A decent understanding of unit/integration testing is demonstrated
 * A basic "gateway" api is created to consolidate and proxy calls to SWAPI
 * You add cool and creative features not included in the spec
 
