@@ -4,7 +4,7 @@
   "description": "single page application",
   "main": "dist/index.html",
   "scripts": {
-    "build": "npm run generate:graphql && npm run lint && npm test && webpack",
+    "build": "npm run generate:graphql && npm run lint && webpack",
     "generate:graphql": "gql-gen --config codegen.yml",
     "lint": "eslint src --ext .ts,.tsx",
     "start": "webpack serve --mode development --progress --color",
@@ -12,6 +12,7 @@
   },
   "author": "anigenero",
   "license": "UNLICENSED",
+  "private": true,
   "devDependencies": {
     "@babel/plugin-proposal-class-properties": "^7.14.5",
     "@babel/plugin-proposal-decorators": "^7.15.4",

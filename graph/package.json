@@ -4,7 +4,7 @@
   "description": "",
   "main": "dist/server.js",
   "scripts": {
-    "build": "npm run generate:graphql && npm run lint && npm test && webpack",
+    "build": "npm run generate:graphql && npm run lint && webpack",
     "generate:graphql": "gql-gen --config codegen.yml",
     "lint": "eslint src --ext .ts",
     "start": "npm run build && node dist/server.js",
