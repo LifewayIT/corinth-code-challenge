@@ -21,7 +21,7 @@ exports[`FilmCard should render correctly 1`] = `
       className="MuiTypography-root MuiTypography-body2 css-r40f8v-MuiTypography-root"
     >
       <div
-        className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 MuiGrid-direction-xs-column css-1134zxd-MuiGrid-root"
+        className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 MuiGrid-direction-xs-column css-ffjoah-MuiGrid-root"
       >
         <div
           className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-undefined css-11lq3yg-MuiGrid-root"

@@ -24,7 +24,7 @@ const SpeciesPage: FunctionComponent<SpeciesPageProps> = ({match: {params}}) => 
     }, [params.id]);
 
     return (
-        <BasePage show={Boolean(species)} card={species && (<SpeciesCard starship={species}/>)}>
+        <BasePage show={Boolean(species)} card={species && (<SpeciesCard species={species}/>)}>
             {species && (
                 <>
                     <Grid container>

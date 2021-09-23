@@ -16,6 +16,8 @@ const mainConfig = (env, argv) => {
 
     const isDevelopment = argv.mode === 'development';
 
+    console.dir(`Development mode: ${isDevelopment}`)
+
     const faviconDir = `assets/favicon`;
     const {analyzer} = argv;
 
@@ -39,7 +41,7 @@ const mainConfig = (env, argv) => {
             historyApiFallback: {
                 index: '/'
             },
-            hot: true,
+            hot: isDevelopment,
             port: 3000,
         },
         entry: {
