@@ -18,8 +18,6 @@ jobs:
           node-version: 16
       - name: setup
         run: ./setup.sh
-      - run: npm test --prefix app
-      - run: npm test --prefix graph
       - name: Log in to the Container registry
         uses: docker/login-action@v1.10.0
         with:

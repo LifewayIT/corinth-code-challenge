@@ -16,9 +16,13 @@ describe('datetimeScalar', () => {
         const result = '2019-01-11T12:34:12.200-05:00';
         const input = '2019-01-11T12:34:12.200';
 
+        const date = DateTime.fromISO(input).setZone('UTC-5').toJSDate();
+        const str = input;
         const mt = DateTime.fromISO(input).setZone('UTC-5');
         const num = 123445;
 
+        expect(dateTimeScalar.serialize(date)).toEqual(result);
+        expect(dateTimeScalar.serialize(str)).toEqual(result);
         expect(dateTimeScalar.serialize(mt)).toEqual(result);
         expect(() =>
             dateTimeScalar.serialize(num) as DateTime
