@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FilmPage should change atom on page load 1`] = `
+<div>
+  <img
+    src="test-file-stub"
+  />
+</div>
+`;

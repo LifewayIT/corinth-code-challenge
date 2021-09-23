@@ -1,0 +1,13 @@
+dist/
+coverage/
+node_modules/
+
+app/types/graphql.d.ts
+
+.env
+*.log
+
+generated.ts
+introspection.ts
+
+.graphqlconfig

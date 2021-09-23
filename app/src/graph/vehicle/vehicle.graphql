@@ -1,0 +1,33 @@
+fragment VehicleDetail on Vehicle {
+    id
+    name
+    picture
+    cargoCapacity
+    consumables
+    costInCredits
+    crew
+    length
+    manufacturer
+    maxAtmospheringSpeed
+    model
+    passengers
+    pilots {
+        id
+        name
+        picture
+    }
+    films {
+        id
+        name
+        picture
+    }
+    vehicleClass
+    created
+    edited
+}
+
+query getVehicle($id: String!) {
+    getVehicle(id: $id) {
+        ...VehicleDetail
+    }
+}

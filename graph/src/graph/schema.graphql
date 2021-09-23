@@ -1,0 +1,147 @@
+enum Gender {
+    male
+    female
+}
+
+scalar DateTime
+
+type Character {
+    id: ID!
+    birthYear: String!
+    eyeColor: String!
+    gender: Gender
+    hairColor: String
+    height: Int!
+    homeWorld: Planet
+    mass: Int
+    name: String!
+    skinColor: String
+    created: DateTime
+    modified: DateTime
+    films: [ Film! ]
+    species: [ Species! ]
+    starships: [ Starship! ]
+    picture: String
+    url: String
+    vehicles: [ Vehicle! ]
+}
+
+type Film {
+    id: ID!
+    name: String!
+    picture: String
+    episodeId: Int!
+    openingCrawl: String
+    director: String
+    producer: String
+    releaseDate: DateTime
+    characters: [ Character! ]
+    planets: [ Planet! ]
+    starships: [ Starship! ]
+    vehicles: [ Vehicle! ]
+    species: [ Species! ]
+    created: DateTime
+    edited: DateTime
+}
+
+type Planet {
+    id: ID!
+    name: String!
+    picture: String
+    rotationPeriodInHours: Int
+    orbitalPeriod: Int
+    diameter: Int
+    climate: String
+    gravity: String
+    terrain: [String]
+    films: [ Film! ]
+    surfaceWater: Int
+    population: String
+    url: String
+    created: DateTime
+    modified: DateTime
+}
+
+type Species {
+    id: ID!
+    name: String!
+    picture: String
+    averageHeight: Float
+    averageLifespan: Int
+    classification: String
+    designation: String
+    eyeColors: [String!]
+    hairColors: [String!]
+    homeWorld: Planet
+    language: String
+    people: [ Character! ]
+    films: [ Film! ]
+    skinColors: [ String! ]
+    created: DateTime
+    edited: DateTime
+}
+
+type Starship {
+    id: ID!
+    name: String!
+    picture: String
+    model: String
+    manufacturer: String
+    costInCredits: String
+    length: Int
+    maxAtmospheringSpeed: String
+    crew: Int
+    passengers: Int
+    cargoCapacity: String
+    consumables: String
+    hyperdriveRating: Float
+    MGLT: String
+    starshipClass: String
+    pilots: [ Character! ]
+    films: [ Film! ],
+    created: DateTime
+    edited: DateTime
+}
+
+type Vehicle {
+    id: ID!
+    name: String!
+    picture: String
+    cargoCapacity: String
+    consumables: String
+    costInCredits: String
+    crew: Int,
+    length: Float
+    manufacturer: String
+    maxAtmospheringSpeed: Int
+    model: String
+    passengers: Int
+    pilots: [ Character! ]
+    films: [ Film! ]
+    vehicleClass: String
+    created: DateTime
+    edited: DateTime
+}
+
+union SearchResult = Character | Film | Planet | Species | Starship | Vehicle
+
+type Query {
+
+    search(text: String!, opts: SearchOptionsInput): [SearchResult]
+
+    getCharacter(id: String!): Character
+    getFilm(id: String!): Film
+    getPlanet(id: String!): Planet
+    getSpecies(id: String!): Species
+    getStarship(id: String!): Starship
+    getVehicle(id: String!): Vehicle
+
+}
+
+input SearchOptionsInput {
+    people: Boolean
+}
+
+schema {
+    query: Query
+}

@@ -1,0 +1,27 @@
+fragment PlanetDetail on Planet {
+    id
+    name
+    picture
+    films {
+        id
+        name
+        picture
+    }
+    rotationPeriodInHours
+    orbitalPeriod
+    diameter
+    climate
+    gravity
+    terrain
+    surfaceWater
+    population
+    url
+    created
+    modified
+}
+
+query getPlanet($id: String!) {
+    getPlanet(id: $id) {
+        ...PlanetDetail
+    }
+}

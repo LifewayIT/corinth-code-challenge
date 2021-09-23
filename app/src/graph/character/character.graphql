@@ -1,0 +1,45 @@
+fragment CharacterDetail on Character {
+    id
+    name
+    picture
+    birthYear
+    eyeColor
+    gender
+    hairColor
+    height
+    homeWorld {
+        id
+        name
+        picture
+    }
+    mass
+    skinColor
+    films {
+        id
+        name
+        picture
+    }
+    species {
+        id
+        name
+        picture
+    }
+    starships {
+        id
+        name
+        picture
+    }
+    vehicles {
+        id
+        name
+        picture
+    }
+    created
+    modified
+}
+
+query getCharacter($id: String!) {
+    getCharacter(id: $id) {
+        ...CharacterDetail
+    }
+}

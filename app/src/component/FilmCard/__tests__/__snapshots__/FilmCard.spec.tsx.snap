@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FilmCard should render correctly 1`] = `
+<div
+  className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1902mtl-MuiPaper-root-MuiCard-root"
+>
+  <img
+    alt="Return of the Jedi"
+    className="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-o69gx8-MuiCardMedia-root"
+    height="500"
+  />
+  <div
+    className="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+  >
+    <div
+      className="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom css-h93ljk-MuiTypography-root"
+    >
+      Return of the Jedi
+    </div>
+    <p
+      className="MuiTypography-root MuiTypography-body2 css-r40f8v-MuiTypography-root"
+    >
+      <div
+        className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 MuiGrid-direction-xs-column css-1134zxd-MuiGrid-root"
+      >
+        <div
+          className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-undefined css-11lq3yg-MuiGrid-root"
+        >
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 css-1744jwa-MuiGrid-root"
+          >
+            <strong>
+              Episode ID
+              :
+            </strong>
+          </div>
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true css-4jz4pb-MuiGrid-root"
+          >
+            6
+          </div>
+        </div>
+        <div
+          className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-undefined css-11lq3yg-MuiGrid-root"
+        >
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 css-1744jwa-MuiGrid-root"
+          >
+            <strong>
+              Director
+              :
+            </strong>
+          </div>
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true css-4jz4pb-MuiGrid-root"
+          >
+            Richard Marquand
+          </div>
+        </div>
+        <div
+          className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-undefined css-11lq3yg-MuiGrid-root"
+        >
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 css-1744jwa-MuiGrid-root"
+          >
+            <strong>
+              Producer
+              :
+            </strong>
+          </div>
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true css-4jz4pb-MuiGrid-root"
+          >
+            Howard G. Kazanjian, George Lucas, Rick McCallum
+          </div>
+        </div>
+        <div
+          className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-undefined css-11lq3yg-MuiGrid-root"
+        >
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 css-1744jwa-MuiGrid-root"
+          >
+            <strong>
+              Release Date
+              :
+            </strong>
+          </div>
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true css-4jz4pb-MuiGrid-root"
+          >
+            1983-05-25
+          </div>
+        </div>
+        <div
+          className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-undefined css-11lq3yg-MuiGrid-root"
+        >
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 css-1744jwa-MuiGrid-root"
+          >
+            <strong>
+              Opening Crawl
+              :
+            </strong>
+          </div>
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true css-4jz4pb-MuiGrid-root"
+          >
+            Luke Skywalker has returned to
+his home planet of Tatooine in
+          </div>
+        </div>
+      </div>
+    </p>
+  </div>
+</div>
+`;

@@ -1,0 +1,35 @@
+fragment StarshipDetail on Starship {
+    id
+    name
+    picture
+    model
+    manufacturer
+    costInCredits
+    length
+    maxAtmospheringSpeed
+    crew
+    passengers
+    cargoCapacity
+    consumables
+    hyperdriveRating
+    MGLT
+    starshipClass
+    pilots {
+        id
+        name
+        picture
+    }
+    films {
+        id
+        name
+        picture
+    }
+    created
+    edited
+}
+
+query getStarship($id: String!) {
+    getStarship(id: $id) {
+        ...StarshipDetail
+    }
+}

@@ -1,0 +1,57 @@
+{
+  "name": "corinth-code-challenge-graph",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "webpack",
+    "generate:graphql": "gql-gen --config codegen.yml",
+    "lint": "eslint src --ext .ts",
+    "start": "npm run build && node dist/server.js",
+    "test": "jest"
+  },
+  "author": {
+    "name": "Robin Schultz",
+    "email": "violinrobin@gmail.com",
+    "url": "https://github.com/anigenero"
+  },
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "apollo-server": "^3.3.0",
+    "axios": "^0.21.4",
+    "graphql": "^15.6.0",
+    "graphql-parse-resolve-info": "^4.12.0",
+    "luxon": "^2.0.2",
+    "mongodb": "^4.1.2",
+    "rxjs": "^7.3.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.15.6",
+    "@graphql-codegen/cli": "^2.1.1",
+    "@graphql-codegen/typescript": "^2.1.0",
+    "@graphql-codegen/typescript-resolvers": "^2.2.1",
+    "@types/bluebird": "^3.5.36",
+    "@types/jest": "^27.0.2",
+    "@types/luxon": "^2.0.4",
+    "@types/mongodb": "^4.0.7",
+    "@types/mongoose": "^5.11.97",
+    "@typescript-eslint/eslint-plugin": "^4.31.2",
+    "@typescript-eslint/parser": "^4.31.2",
+    "babel-loader": "^8.2.2",
+    "bluebird": "^3.7.2",
+    "core-js": "^3.18.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-prefer-arrow": "^1.2.3",
+    "jest": "^27.2.1",
+    "jest-cli": "^27.2.1",
+    "json-schema-to-typescript": "^10.1.5",
+    "mongoose": "^5.10.19",
+    "mongoose-fuzzy-searching": "^2.0.2",
+    "ts-loader": "^9.2.6",
+    "typescript": "^4.4.3",
+    "webpack-cli": "^4.8.0",
+    "webpack-node-externals": "^3.0.0"
+  }
+}

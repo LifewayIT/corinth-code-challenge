@@ -1,0 +1,43 @@
+fragment FilmDetail on Film {
+    id
+    name
+    picture
+    episodeId
+    openingCrawl
+    director
+    producer
+    releaseDate
+    characters {
+        id
+        name
+        picture
+    }
+    planets {
+        id
+        name
+        picture
+    }
+    starships {
+        id
+        name
+        picture
+    }
+    vehicles {
+        id
+        name
+        picture
+    }
+    species {
+        id
+        name
+        picture
+    }
+    created
+    edited
+}
+
+query getFilm($id: String!) {
+    getFilm(id: $id) {
+        ...FilmDetail
+    }
+}

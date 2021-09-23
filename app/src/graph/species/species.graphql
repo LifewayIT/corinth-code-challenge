@@ -1,0 +1,34 @@
+fragment SpeciesDetail on Species {
+    id
+    name
+    picture
+    averageHeight
+    averageLifespan
+    classification
+    designation
+    eyeColors
+    hairColors
+    homeWorld {
+        id
+        name
+        picture
+    }
+    language
+    people {
+        id
+        name
+        picture
+    }
+    films {
+        id
+        name
+        picture
+    }
+    skinColors
+}
+
+query getSpecies($id: String!) {
+    getSpecies(id: $id) {
+        ...SpeciesDetail
+    }
+}

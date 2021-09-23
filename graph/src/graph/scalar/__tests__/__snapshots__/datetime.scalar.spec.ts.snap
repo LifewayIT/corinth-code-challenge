@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`datetimeScalar should parse DateTime value 1`] = `2019-01-11T17:34:12.000Z`;
+
+exports[`datetimeScalar should parse literal 1`] = `2019-01-11T17:34:12.000Z`;
+
+exports[`datetimeScalar should serialize DateTime value 1`] = `"Field error: value is an invalid date/time"`;
+
+exports[`datetimeScalar should throw error when parsing DateTime value 1`] = `"Field error: value is an invalid date/time"`;
+
+exports[`datetimeScalar should throw error when parsing literal with bad date 1`] = `"Query error: Invalid date/time"`;
+
+exports[`datetimeScalar should throw error when parsing non-string literal 1`] = `"Query error: Can only parse strings to dates but got a: BooleanValue"`;

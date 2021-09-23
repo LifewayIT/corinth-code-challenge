@@ -1,0 +1,30 @@
+query search($txt: String!) {
+    search(text: $txt) {
+        __typename
+        ... on Character {
+            id
+            name
+            picture
+        }
+        ... on Film {
+            id
+            name
+            picture
+        }
+        ... on Planet {
+            id
+            name
+            picture
+        }
+        ... on Species {
+            id
+            name
+            picture
+        }
+        ... on Starship {
+            id
+            name
+            picture
+        }
+    }
+}
