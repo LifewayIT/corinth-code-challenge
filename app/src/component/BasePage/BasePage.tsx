@@ -12,7 +12,7 @@ export const BasePage: FunctionComponent<BasePageProps> = ({name, show = false, 
     <>
         {name && (
             <Helmet>
-                <title>{name}</title>
+                <title>Corinth | {name}</title>
             </Helmet>
         )}
         <Grid container spacing={4} justifyContent="space-around">
