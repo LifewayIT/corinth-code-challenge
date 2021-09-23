@@ -1,8 +1,8 @@
 import {Avatar, List, ListItem, ListItemAvatar, ListItemText, ListSubheader} from '@mui/material';
+import {isEmpty} from 'lodash';
 import React, {ReactElement} from 'react';
 import {Link} from 'react-router-dom';
 import {toResourceUrl} from '../../util/data';
-import {isEmpty} from "lodash";
 
 type GraphQLType = {
     __typename?: string;
@@ -14,7 +14,7 @@ type GraphQLType = {
 interface ItemListProps<T extends GraphQLType> {
     items: T[];
     showType?: boolean;
-    title?: string
+    title?: string;
 }
 
 export const ItemList =
@@ -22,12 +22,12 @@ export const ItemList =
         !isEmpty(items) ? (
             <List dense
                   sx={{
-                      width: '100%',
-                      maxWidth: 360,
-                      bgcolor: 'background.paper',
-                      position: 'relative',
-                      overflow: 'auto',
-                      maxHeight: 200,
+                      'width': '100%',
+                      'maxWidth': 360,
+                      'bgcolor': 'background.paper',
+                      'position': 'relative',
+                      'overflow': 'auto',
+                      'maxHeight': 200,
                       '& ul': {padding: 0},
                   }}
                   subheader={title && (

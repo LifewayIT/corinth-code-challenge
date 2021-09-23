@@ -1,3 +1,5 @@
+[![Build corinth container](https://github.com/anigenero/corinth-code-challenge/actions/workflows/build.yml/badge.svg)](https://github.com/anigenero/corinth-code-challenge/actions/workflows/build.yml)
+
 ## Installation
 Run the setup script to ensure that the 
 ```bash

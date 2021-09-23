@@ -1,7 +1,8 @@
+import {Grid} from '@mui/material';
 import React, {FunctionComponent} from 'react';
 import {StarshipService} from '../../graph/starship/starshipService';
-import {BaseCard} from "../BaseCard/BaseCard";
-import {FieldDisplay} from "../FieldDisplay/FieldDisplay";
+import {BaseCard} from '../BaseCard/BaseCard';
+import {FieldDisplay} from '../FieldDisplay/FieldDisplay';
 
 type StarshipCardProps = {
     starship: StarshipService.StarshipDetail;

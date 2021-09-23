@@ -2,22 +2,22 @@ import {GraphQLError, GraphQLScalarType, Kind} from 'graphql';
 import {isDate, isString} from 'lodash';
 import {DateTime} from 'luxon';
 
-const _formatStr = 'YYYY-MM-DDTHH:mm:ssZ';
-
 export const dateTimeScalar = new GraphQLScalarType({
 
     name: 'DateTime',
 
-    serialize: (value: Date | string) => {
+    serialize: (value: DateTime | Date | string) => {
 
         if (value === null || typeof value === 'undefined') {
             return null;
         }
 
         if (isDate(value)) {
-            return DateTime.fromJSDate(value).toFormat(_formatStr);
+            return DateTime.fromJSDate(value).toISO();
         } else if (isString(value)) {
-            return DateTime.fromISO(value).toFormat(_formatStr);
+            return DateTime.fromISO(value).toISO();
+        } else if (value instanceof DateTime) {
+            return value.toISO();
         } else {
             throw new TypeError('Field error: value is an invalid date/time');
         }

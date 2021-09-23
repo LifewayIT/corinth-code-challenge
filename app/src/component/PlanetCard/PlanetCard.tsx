@@ -1,8 +1,8 @@
 import {Grid} from '@mui/material';
 import React, {FunctionComponent} from 'react';
 import {PlanetService} from '../../graph/planet/planetService';
-import {FieldDisplay} from "../FieldDisplay/FieldDisplay";
-import {BaseCard} from "../BaseCard/BaseCard";
+import {BaseCard} from '../BaseCard/BaseCard';
+import {FieldDisplay} from '../FieldDisplay/FieldDisplay';
 
 type PlanetCardProps = {
     planet: PlanetService.PlanetDetail;

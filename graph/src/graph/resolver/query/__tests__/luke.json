@@ -1,0 +1,15 @@
+{
+  "__typename": "Character",
+  "id": "1",
+  "picture": "https://starwars-visualguide.com/assets/img/characters/1.jpg",
+  "birthYear": "19BBY",
+  "eyeColor": "blue",
+  "gender": "male",
+  "height": 172,
+  "hairColor": "blond",
+  "mass": 77,
+  "skinColor": "fair",
+  "name": "Luke Skywalker",
+  "created": "2014-12-09T13:50:51.644000Z",
+  "modified": "2014-12-20T21:17:56.891000Z"
+}

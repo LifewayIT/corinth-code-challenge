@@ -1,30 +1,26 @@
 import {Grid} from '@mui/material';
-import React, {FunctionComponent, useEffect} from 'react';
+import React, {FunctionComponent} from 'react';
 import {RouteComponentProps} from 'react-router';
 import {useRecoilCallback, useRecoilValue} from 'recoil';
+import {SpeciesAtom} from '../../graph/species/speciesAtom';
+import {BasePage} from '../BasePage/BasePage';
 import {ItemList} from '../ItemList/ItemList';
+import {SpeciesCard} from '../SpeciesCard/SpeciesCard';
 import {withErrorCatch} from '../withErrorCatch';
 import {withSuspense} from '../withSuspense';
 import {StarshipPageSuspenseView} from './StarshipPageSuspenseView';
-import {BasePage} from "../BasePage/BasePage";
-import {SpeciesAtom} from "../../graph/species/speciesAtom";
-import {SpeciesCard} from "../SpeciesCard/SpeciesCard";
 
 type SpeciesPageProps = RouteComponentProps<{ id: string }>;
 
 const SpeciesPage: FunctionComponent<SpeciesPageProps> = ({match: {params}}) => {
 
     const species = useRecoilValue(SpeciesAtom.species);
-    const updateSpeciesId = useRecoilCallback(({set}) =>
+    useRecoilCallback(({set}) =>
         (val: string) => set(SpeciesAtom.speciesId, val)
-    );
-
-    useEffect(() => {
-        updateSpeciesId(params.id);
-    }, [params.id]);
+    )(params.id);
 
     return (
-        <BasePage show={Boolean(species)} card={species && (<SpeciesCard species={species}/>)}>
+        <BasePage name={species && species.name} show={Boolean(species)} card={species && (<SpeciesCard species={species}/>)}>
             {species && (
                 <>
                     <Grid container>

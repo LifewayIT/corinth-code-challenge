@@ -1,5 +1,5 @@
 import {atom, selector} from 'recoil';
-import {SpeciesService} from "./speciesService";
+import {SpeciesService} from './speciesService';
 
 export namespace SpeciesAtom {
 

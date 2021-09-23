@@ -4,7 +4,7 @@
   "description": "single page application",
   "main": "dist/index.html",
   "scripts": {
-    "build": "npm run generate:graphql && npm test && webpack",
+    "build": "npm run generate:graphql && npm run lint && npm test && webpack",
     "generate:graphql": "gql-gen --config codegen.yml",
     "lint": "eslint src --ext .ts,.tsx",
     "start": "webpack serve --mode development --progress --color",
@@ -33,6 +33,7 @@
     "@types/jest": "^27.0.1",
     "@types/lodash": "^4.14.173",
     "@types/react-dom": "^17.0.9",
+    "@types/react-helmet": "^6.1.2",
     "@types/react-router": "^5.1.16",
     "@types/react-router-dom": "^5.1.9",
     "@types/react-test-renderer": "^17.0.1",

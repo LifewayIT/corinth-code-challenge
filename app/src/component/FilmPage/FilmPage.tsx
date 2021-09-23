@@ -3,12 +3,12 @@ import React, {FunctionComponent} from 'react';
 import {RouteComponentProps} from 'react-router';
 import {useRecoilCallback, useRecoilValue} from 'recoil';
 import {FilmAtom} from '../../graph/film/filmAtom';
+import {BasePage} from '../BasePage/BasePage';
 import {FilmCard} from '../FilmCard/FilmCard';
 import {ItemList} from '../ItemList/ItemList';
 import {withErrorCatch} from '../withErrorCatch';
 import {withSuspense} from '../withSuspense';
 import {FilmPageSuspenseView} from './FilmPageSuspenseView';
-import {BasePage} from "../BasePage/BasePage";
 
 type FilmPageProps = RouteComponentProps<{ id: string }>;
 
@@ -20,7 +20,7 @@ const FilmPage: FunctionComponent<FilmPageProps> = ({match: {params}}) => {
     )(params.id);
 
     return (
-        <BasePage show={Boolean(film)} card={film && (
+        <BasePage name={film && film.name} show={Boolean(film)} card={film && (
             <FilmCard film={film}/>
         )}>
             {film && (

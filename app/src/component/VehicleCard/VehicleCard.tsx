@@ -1,7 +1,8 @@
+import {Grid} from '@mui/material';
 import React, {FunctionComponent} from 'react';
 import {VehicleService} from '../../graph/vehicle/vehicleService';
-import {BaseCard} from "../BaseCard/BaseCard";
-import {FieldDisplay} from "../FieldDisplay/FieldDisplay";
+import {BaseCard} from '../BaseCard/BaseCard';
+import {FieldDisplay} from '../FieldDisplay/FieldDisplay';
 
 type VehicleCardProps = {
     vehicle: VehicleService.VehicleDetail;

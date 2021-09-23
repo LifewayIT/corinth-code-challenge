@@ -1,30 +1,26 @@
 import {Grid} from '@mui/material';
-import React, {FunctionComponent, useEffect} from 'react';
+import React, {FunctionComponent} from 'react';
 import {RouteComponentProps} from 'react-router';
 import {useRecoilCallback, useRecoilValue} from 'recoil';
 import {StarshipAtom} from '../../graph/starship/starshipAtom';
+import {BasePage} from '../BasePage/BasePage';
 import {ItemList} from '../ItemList/ItemList';
 import {StarshipCard} from '../StarshipCard/StarshipCard';
 import {withErrorCatch} from '../withErrorCatch';
 import {withSuspense} from '../withSuspense';
 import {StarshipPageSuspenseView} from './StarshipPageSuspenseView';
-import {BasePage} from "../BasePage/BasePage";
 
 type StarshipPageProps = RouteComponentProps<{ id: string }>;
 
 const StarshipPage: FunctionComponent<StarshipPageProps> = ({match: {params}}) => {
 
     const starship = useRecoilValue(StarshipAtom.starship);
-    const updateStarshipId = useRecoilCallback(({set}) =>
+    useRecoilCallback(({set}) =>
         (val: string) => set(StarshipAtom.starshipId, val)
-    );
-
-    useEffect(() => {
-        updateStarshipId(params.id);
-    }, [params.id]);
+    )(params.id);
 
     return (
-        <BasePage show={Boolean(starship)} card={starship && (<StarshipCard starship={starship}/>)}>
+        <BasePage name={starship && starship.name} show={Boolean(starship)} card={starship && (<StarshipCard starship={starship}/>)}>
             {starship && (
                 <>
                     <Grid container>

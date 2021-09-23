@@ -1,7 +1,8 @@
+import {Grid} from '@mui/material';
 import React, {FunctionComponent} from 'react';
-import {BaseCard} from "../BaseCard/BaseCard";
-import {FieldDisplay} from "../FieldDisplay/FieldDisplay";
-import {SpeciesService} from "../../graph/species/speciesService";
+import {SpeciesService} from '../../graph/species/speciesService';
+import {BaseCard} from '../BaseCard/BaseCard';
+import {FieldDisplay} from '../FieldDisplay/FieldDisplay';
 
 type SpeciesCardProps = {
     species: SpeciesService.SpeciesDetail;

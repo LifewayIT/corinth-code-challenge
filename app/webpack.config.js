@@ -44,6 +44,9 @@ const mainConfig = (env, argv) => {
             hot: isDevelopment,
             port: 3000,
         },
+        stats: {
+            warnings: isDevelopment
+        },
         entry: {
             'main': './index.tsx',
             'service-worker': './service-worker/worker.ts'

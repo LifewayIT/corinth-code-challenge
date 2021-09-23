@@ -38,7 +38,7 @@ export function withErrorCatch<T, P extends ErrorCatchProps>(
                 if (FallbackComponent) {
                     return (
                         <FallbackComponent error={this.state.error} {...this.props as any}/>
-                    ) as any;
+                    );
                 } else {
                     return (
                         <Alert severity="error">

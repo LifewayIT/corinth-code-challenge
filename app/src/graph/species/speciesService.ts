@@ -1,12 +1,12 @@
-import {apolloClient} from "../apolloClient";
-import {GetSpeciesQuery, GetSpeciesQueryVariables, SpeciesDetailFragment} from "../generated";
+import {apolloClient} from '../apolloClient';
+import {GetSpeciesQuery, GetSpeciesQueryVariables, SpeciesDetailFragment} from '../generated';
 import {getSpecies} from './species.graphql';
 
 export namespace SpeciesService {
 
     export type SpeciesDetail = SpeciesDetailFragment;
 
-    export const getSpeciesById = (id: string) =>
+    export const getSpeciesById = (id: string): Promise<SpeciesDetail> =>
         apolloClient.query<GetSpeciesQuery, GetSpeciesQueryVariables>({
             query: getSpecies,
             variables: {

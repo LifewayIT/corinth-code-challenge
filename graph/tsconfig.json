@@ -4,6 +4,7 @@
     "allowJs": true,
     "outDir": "./dist/",
     "inlineSourceMap": true,
+    "resolveJsonModule": true,
     "noImplicitAny": true,
     "module": "es6",
     "target": "es5",

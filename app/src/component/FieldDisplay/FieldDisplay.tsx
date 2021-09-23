@@ -1,13 +1,12 @@
-import React, {FunctionComponent} from "react";
-import {Grid} from "@mui/material";
+import {Grid} from '@mui/material';
+import React, {FunctionComponent} from 'react';
 
 type FieldDisplayProps = {
     label: string;
     value: string | number;
-}
+};
 
-export const FieldDisplay: FunctionComponent<FieldDisplayProps> = ({label, value}) => {
-    return (
+export const FieldDisplay: FunctionComponent<FieldDisplayProps> = ({label, value}) => (
         <Grid container direction="row">
             <Grid item xs={4}>
                 <strong>{label}:</strong>
@@ -16,5 +15,4 @@ export const FieldDisplay: FunctionComponent<FieldDisplayProps> = ({label, value
                 {value}
             </Grid>
         </Grid>
-    )
-};
+    );
