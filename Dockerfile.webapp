@@ -6,6 +6,8 @@ COPY app/package*.json ./
 COPY app .
 COPY graph/src/graph/schema.graphql ../graph/src/graph/schema.graphql
 
+RUN echo "graphql_endpoint=http://localhost:4000/" > .env
+
 RUN npm install
 RUN npm test
 

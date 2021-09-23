@@ -38,6 +38,10 @@ const mainConfig = (env, argv) => {
         context: sourcePath,
         devtool: (isDevelopment ? 'source-map' : false),
         devServer: {
+            overlay: {
+                warnings: false,
+                errors: true
+            },
             historyApiFallback: {
                 index: '/'
             },
