@@ -1,6 +1,6 @@
+import {Grid, LinearProgress} from '@mui/material';
 import React, {FunctionComponent} from 'react';
 import splashScreen from '../../assets/image/long-time-ago.png';
-import {CircularProgress, Grid, LinearProgress} from "@mui/material";
 
 export const FilmPageSuspenseView: FunctionComponent = () => (
     <Grid container direction="column">
